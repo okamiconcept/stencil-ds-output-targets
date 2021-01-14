@@ -1,5 +1,4 @@
-import path from 'path';
-import { dashToPascalCase, normalizePath } from './utils';
+import { dashToPascalCase } from './utils';
 import type { ComponentCompilerMeta } from '@stencil/core/internal';
 
 export const createComponentDefinition = (
