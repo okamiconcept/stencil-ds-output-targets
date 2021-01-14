@@ -33,21 +33,8 @@ export const createComponentDefinition = (
 
   const tagNameAsPascal = dashToPascalCase(cmpMeta.tagName);
 
-  const typePath = path.parse(
-    path.join(
-      componentCorePackage,
-      path.join(cmpMeta.sourceFilePath, '').replace(path.join(rootDir, 'src'), distTypesDir),
-    ),
-  );
-  const importPath = normalizePath(path.join(typePath.dir, typePath.name));
-  const outputsInterface =
-    outputs.length > 0
-      ? `import { ${cmpMeta.componentClassName} as I${cmpMeta.componentClassName} } from '${importPath}';`
-      : '';
-
   const lines = [
     `
-${outputsInterface}
 export declare interface ${tagNameAsPascal} extends Components.${tagNameAsPascal} {}
 ${getProxyCmp(inputs, methods)}
 @Component({
