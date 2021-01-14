@@ -1,6 +1,6 @@
 /* tslint:disable */
 /* auto-generated angular directive proxies */
-import { ChangeDetectionStrategy, ChangeDetectorRef, Component, ElementRef, NgZone } from '@angular/core';
+import { ChangeDetectionStrategy, ChangeDetectorRef, Component, ElementRef, EventEmitter, NgZone } from '@angular/core';
 import { ProxyCmp, proxyOutputs } from './angular-component-lib/utils';
 
 import { Components } from 'component-library';
@@ -19,9 +19,9 @@ export declare interface MyButton extends Components.MyButton {}
 })
 export class MyButton {
   /** Emitted when the button has focus. */
-  myFocus!: IButton['myFocus'];
+  myFocus!: EventEmitter<any>;
   /** Emitted when the button loses focus. */
-  myBlur!: IButton['myBlur'];
+  myBlur!: EventEmitter<any>;
   protected el: HTMLElement;
   constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
     c.detach();
@@ -44,11 +44,11 @@ export declare interface MyCheckbox extends Components.MyCheckbox {}
 })
 export class MyCheckbox {
   /** Emitted when the checked property has changed. */
-  myChange!: ICheckbox['myChange'];
+  myChange!: EventEmitter<any>;
   /** Emitted when the toggle has focus. */
-  myFocus!: ICheckbox['myFocus'];
+  myFocus!: EventEmitter<any>;
   /** Emitted when the toggle loses focus. */
-  myBlur!: ICheckbox['myBlur'];
+  myBlur!: EventEmitter<any>;
   protected el: HTMLElement;
   constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
     c.detach();
@@ -71,7 +71,7 @@ export declare interface MyComponent extends Components.MyComponent {}
 })
 export class MyComponent {
   /** Testing an event without value */
-  myCustomEvent!: IMyComponent['myCustomEvent'];
+  myCustomEvent!: EventEmitter<any>;
   protected el: HTMLElement;
   constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
     c.detach();
@@ -95,13 +95,13 @@ export declare interface MyInput extends Components.MyInput {}
 })
 export class MyInput {
   /** Emitted when a keyboard input occurred. */
-  myInput!: IInput['myInput'];
+  myInput!: EventEmitter<any>;
   /** Emitted when the value has changed. */
-  myChange!: IInput['myChange'];
+  myChange!: EventEmitter<any>;
   /** Emitted when the input loses focus. */
-  myBlur!: IInput['myBlur'];
+  myBlur!: EventEmitter<any>;
   /** Emitted when the input has focus. */
-  myFocus!: IInput['myFocus'];
+  myFocus!: EventEmitter<any>;
   protected el: HTMLElement;
   constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
     c.detach();
@@ -125,13 +125,13 @@ export declare interface MyPopover extends Components.MyPopover {}
 })
 export class MyPopover {
   /** Emitted after the popover has presented. */
-  myPopoverDidPresent!: IPopover['didPresent'];
+  myPopoverDidPresent!: EventEmitter<any>;
   /** Emitted before the popover has presented. */
-  myPopoverWillPresent!: IPopover['willPresent'];
+  myPopoverWillPresent!: EventEmitter<any>;
   /** Emitted before the popover has dismissed. */
-  myPopoverWillDismiss!: IPopover['willDismiss'];
+  myPopoverWillDismiss!: EventEmitter<any>;
   /** Emitted after the popover has dismissed. */
-  myPopoverDidDismiss!: IPopover['didDismiss'];
+  myPopoverDidDismiss!: EventEmitter<any>;
   protected el: HTMLElement;
   constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
     c.detach();
@@ -154,11 +154,11 @@ export declare interface MyRadio extends Components.MyRadio {}
 })
 export class MyRadio {
   /** Emitted when the radio button has focus. */
-  myFocus!: IRadio['myFocus'];
+  myFocus!: EventEmitter<any>;
   /** Emitted when the radio button loses focus. */
-  myBlur!: IRadio['myBlur'];
+  myBlur!: EventEmitter<any>;
   /** Emitted when the radio button loses focus. */
-  mySelect!: IRadio['mySelect'];
+  mySelect!: EventEmitter<any>;
   protected el: HTMLElement;
   constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
     c.detach();
@@ -181,7 +181,7 @@ export declare interface MyRadioGroup extends Components.MyRadioGroup {}
 })
 export class MyRadioGroup {
   /** Emitted when the value has changed. */
-  myChange!: IRadioGroup['myChange'];
+  myChange!: EventEmitter<any>;
   protected el: HTMLElement;
   constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
     c.detach();
@@ -204,11 +204,11 @@ export declare interface MyRange extends Components.MyRange {}
 })
 export class MyRange {
   /** Emitted when the value property has changed. */
-  myChange!: IRange['myChange'];
+  myChange!: EventEmitter<any>;
   /** Emitted when the range has focus. */
-  myFocus!: IRange['myFocus'];
+  myFocus!: EventEmitter<any>;
   /** Emitted when the range loses focus. */
-  myBlur!: IRange['myBlur'];
+  myBlur!: EventEmitter<any>;
   protected el: HTMLElement;
   constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
     c.detach();
